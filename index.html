@@ -1,43 +1,41 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contoh Website</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To-Do List App</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+  <div class="container">
+    <h1>🌸 To-Do List</h1>
 
-  <header>
-    <h1>Selamat Datang di Website Saya</h1>
-    <nav>
-      <ul>
-        <li><a href="#">Beranda</a></li>
-        <li><a href="#">Tentang Kami</a></li>
-        <li><a href="#">Hubungi Kami</a></li>
-      </ul>
-    </nav>
-  </header>
+    <form id="todo-form">
+      <input type="text" id="todo-input" placeholder="What do you want to do?" required />
+      <input type="date" id="date-input" required />
+      <button type="submit">+</button>
+    </form>
 
-  <main>
-    <article>
-      <h2>Konten Utama</h2>
-      <p>Ini adalah kisah seru dari dua sahabat tak biasa: Judy Hopps, kelinci pemberani yang bercita-cita menjadi polisi, dan Nick Wilde, rubah cerdik yang diam-diam berhati mulia. Melalui petualangan mereka di kota Zootopia, kita belajar tentang keberanian, kepercayaan, dan arti kerja sama.</p>
-    </article>
+    <div class="controls">
+      <input type="text" id="filter-input" placeholder="Search task..." />
+      <button id="delete-all">🧹 Clear All</button>
+    </div>
 
-    <aside>
-      <h2>Informasi Tambahan</h2>
-      <figure>
-        <img src="images/gambar1.jpeg" alt="Karakter kartun lucu dan bersahabat">
-        <figcaption>Judy dan Nick, dua sahabat ceria yang siap menemani Anda menjelajahi website ini.</figcaption>
-      </figure>
-      <p>Judy si kelinci pemberani dan Nick si rubah cerdik namun setia kini hadir di halaman ini! Meski berasal dari dunia animasi, mereka turut menciptakan suasana yang hangat, menyenangkan, dan penuh semangat untuk setiap pengunjung yang datang.</p>
-    </aside>
-  </main>
+    <table>
+      <thead>
+        <tr>
+          <th>Task</th>
+          <th>Date</th>
+          <th>Status</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="todo-list">
+        <tr><td colspan="4">No tasks available</td></tr>
+      </tbody>
+    </table>
+  </div>
 
-  <footer>
-    <p>&copy; 2025 Isti Zahra. Seluruh hak cipta dilindungi.</p>
-  </footer>
-
+  <script src="js/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, #e1f4f3, #ffe1f2);
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 16px;
+  padding: 30px;
+  width: 100%;
+  max-width: 800px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.98); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+form input,
+form button {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+form input {
+  flex: 1;
+  background: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+}
+
+form button {
+  background: #ff77a9;
+  color: white;
+  font-weight: bold;
+  width: 45px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+form button:hover {
+  background: #f45c96;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.controls input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  background: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+}
+
+.controls button {
+  background: #77dd77;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.controls button:hover {
+  background: #5ac45a;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  background: #fdfdfd;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+thead {
+  background-color: #d6f5d6;
+  color: #333;
+}
+
+table th,
+table td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+button.done-btn {
+  background-color: #c1f0c1;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  color: #2d812d;
+  cursor: pointer;
+}
+
+button.delete-btn {
+  background-color: #ffc2cb;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  color: #a94442;
+  cursor: pointer;
+  margin-left: 5px;
+}
